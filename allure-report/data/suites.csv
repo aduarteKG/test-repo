@@ -1,7 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2","test","API","Tue Nov 19 15:59:17 CST 2024","passed","Tue Nov 19 15:59:17 CST 2024","test","JUnit4Test","com.example.project.JUnit4Test","test"
-"","0","mySecondTest()","","Tue Nov 19 15:59:17 CST 2024","skipped","Tue Nov 19 15:59:17 CST 2024","","com.example.project.SecondTest","com.example.project.SecondTest","mySecondTest"
-"","1008","aSlowTest()","API","Tue Nov 19 15:59:16 CST 2024","passed","Tue Nov 19 15:59:17 CST 2024","aSlowTest","mySecondTest","com.example.project.SecondTest","aSlowTest"
-"","8","testThisThing()","API","Tue Nov 19 15:59:16 CST 2024","passed","Tue Nov 19 15:59:16 CST 2024","testThisThing","OtherTests","com.example.project.OtherTests","testThisThing"
-"","1","testThisOtherThing()","API","Tue Nov 19 15:59:16 CST 2024","passed","Tue Nov 19 15:59:16 CST 2024","testThisOtherThing","OtherTests","com.example.project.OtherTests","testThisOtherThing"
-"","6","My 1st JUnit 5 test! 😎","API","Tue Nov 19 15:59:16 CST 2024","passed","Tue Nov 19 15:59:16 CST 2024","","","com.example.project.FirstTest","myFirstTest"
