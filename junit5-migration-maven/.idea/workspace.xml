@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d06bb9c9-8b45-4485-ad4a-1b9a579f7e80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../allure-report/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/behaviors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/packages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/suites.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/data/test-cases/f7985e667a723d76.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/data/timeline.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/export/influxDbData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/export/prometheusData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/history/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/history/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/history/retry-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/duration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/retry-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/severity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/status-chart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/../allure-report/widgets/summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-results/a03709cf-82c6-45cc-8cfb-641d6e101383-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-results/b519e8d2-6bb5-41a3-aeb2-e26fe87c0c0f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-results/e1f7aed2-dbaa-4a1c-9e2a-b5ffff83e540-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allure-results/e2211ebd-6599-4feb-a973-bbc18991d4d8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project/FirstTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project/JUnit4Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project/OtherTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project/SecondTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/allure.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2p4lhc6iDP6CH5SNIdHbvsF08Kj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/aduarte/Desktop/allure-reports/junit5-migration-maven",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d06bb9c9-8b45-4485-ad4a-1b9a579f7e80" name="Changes" comment="" />
+      <created>1732033348442</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732033348442</updated>
+      <workItem from="1732033349578" duration="1850000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
