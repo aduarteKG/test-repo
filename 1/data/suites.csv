@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Nov 21 16:21:02 GMT 2024","Thu Nov 21 16:21:03 GMT 2024","1025","API","mySecondTest","aSlowTest","com.example.project.SecondTest","aSlowTest","aSlowTest()",""
+"skipped","Thu Nov 21 16:21:03 GMT 2024","Thu Nov 21 16:21:03 GMT 2024","0","","com.example.project.SecondTest","","com.example.project.SecondTest","mySecondTest","mySecondTest()",""
+"passed","Thu Nov 21 16:21:03 GMT 2024","Thu Nov 21 16:21:03 GMT 2024","13","TEST - API","OtherTests","testThisThing","com.example.project.OtherTests","testThisThing","testThisThing()",""
+"passed","Thu Nov 21 16:21:03 GMT 2024","Thu Nov 21 16:21:03 GMT 2024","5","TEST - API","JUnit4Test","test","com.example.project.JUnit4Test","test","test",""
+"passed","Thu Nov 21 16:21:03 GMT 2024","Thu Nov 21 16:21:03 GMT 2024","13","TEST - API","","","com.example.project.FirstTest","myFirstTest","Test JUnit 5",""
+"passed","Thu Nov 21 16:21:03 GMT 2024","Thu Nov 21 16:21:03 GMT 2024","3","API","OtherTests","testThisOtherThing","com.example.project.OtherTests","testThisOtherThing","testThisOtherThing()",""
+"passed","Thu Nov 21 16:21:39 GMT 2024","Thu Nov 21 16:21:39 GMT 2024","33","","","","","","CheckboxWithLabel changes the text after click",""
