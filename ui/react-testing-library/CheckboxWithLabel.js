@@ -2,7 +2,7 @@
 
 import {useState} from 'react';
 
-export default function CheckboxWithLabel({labelOn, labelOff}) {
+export default function CheckboxWithLabelTEST({labelOn, labelOff}) {
   const [isChecked, setIsChecked] = useState(false);
 
   const onChange = () => {

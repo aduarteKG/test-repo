@@ -21,15 +21,15 @@ import org.junit.jupiter.api.TestInfo;
 @Tag("fast")
 class FirstTest {
     @Test
-	@DisplayName("My 1st JUnit 5 test! 😎")
+	@DisplayName("Test JUnit 5")
 	void myFirstTest(TestInfo testInfo) {
 		// https://github.com/allure-framework/allure-java/issues/1028
 		Allure.getLifecycle().updateTestCase(tr -> tr.getLabels().removeIf(label -> "suite".equals(label.getName())));
 
-        Allure.label("parentSuite", "API");
+        Allure.label("parentSuite", "TEST - API");
 
 		Calculator calculator = new Calculator();
 		assertEquals(2, calculator.add(1, 1), "1 + 1 should equal 2");
-		assertEquals("My 1st JUnit 5 test! 😎", testInfo.getDisplayName(), () -> "TestInfo is injected correctly");
+		assertEquals("Test JUnit 5", testInfo.getDisplayName(), () -> "TestInfo is injected correctly");
 	}
 }

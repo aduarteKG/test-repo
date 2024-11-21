@@ -15,6 +15,19 @@ jobs:
       - name: Run Java tests
         working-directory: ./api/junit5-migration-maven
         run: ./mvnw verify
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        working-directory: ./ui/react-testing-library
+        run: npm install
+
+      - name: Run Jest tests
+        working-directory: ./ui/react-testing-library
+        run: npm test
 
       - name: Load test report history
         uses: actions/checkout@v4

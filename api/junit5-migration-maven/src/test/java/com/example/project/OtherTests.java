@@ -21,7 +21,7 @@ class OtherTests {
 	void testThisThing() {
         Allure.getLifecycle().updateTestCase(tr -> tr.getLabels().removeIf(label -> "suite".equals(label.getName())));
 
-		Allure.label("parentSuite", "API");
+		Allure.label("parentSuite", "TEST - API");
         Allure.suite("OtherTests");
         Allure.label("subSuite", "testThisThing");
 	}
