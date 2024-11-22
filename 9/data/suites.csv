@@ -1,7 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Nov 20 22:24:58 GMT 2024","Wed Nov 20 22:24:59 GMT 2024","1033","API","mySecondTest","aSlowTest","com.example.project.SecondTest","aSlowTest","aSlowTest()",""
-"passed","Wed Nov 20 22:24:59 GMT 2024","Wed Nov 20 22:24:59 GMT 2024","6","API","JUnit4Test","test","com.example.project.JUnit4Test","test","test",""
-"skipped","Wed Nov 20 22:24:59 GMT 2024","Wed Nov 20 22:24:59 GMT 2024","0","","com.example.project.SecondTest","","com.example.project.SecondTest","mySecondTest","mySecondTest()",""
-"passed","Wed Nov 20 22:24:59 GMT 2024","Wed Nov 20 22:24:59 GMT 2024","21","API","","","com.example.project.FirstTest","myFirstTest","My 1st JUnit 5 test! 😎",""
-"passed","Wed Nov 20 22:24:59 GMT 2024","Wed Nov 20 22:24:59 GMT 2024","3","API","OtherTests","testThisOtherThing","com.example.project.OtherTests","testThisOtherThing","testThisOtherThing()",""
-"passed","Wed Nov 20 22:24:59 GMT 2024","Wed Nov 20 22:24:59 GMT 2024","6","API","OtherTests","testThisThing","com.example.project.OtherTests","testThisThing","testThisThing()",""
