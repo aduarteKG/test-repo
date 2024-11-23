@@ -38,13 +38,14 @@ jobs:
         continue-on-error: true
         with:
           ref: gh-pages
-          path: gh-pages/allure-reports/${{ github.event.pull_request.number }}
+          path: gh-pages
 
       - name: Build test report
         uses: simple-elf/allure-report-action@v1.10
         if: always()
         with:
-          gh_pages: gh-pages/allure-reports/${{ github.event.pull_request.number }}
+          gh_pages: gh-pages
+          subfolder: allure-reports/${{ github.event.pull_request.number }}
           allure_history: allure-history
           allure_results: allure-results
       
@@ -55,4 +56,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-history
-          destination_dir: allure-reports/${{ github.event.pull_request.number }}
