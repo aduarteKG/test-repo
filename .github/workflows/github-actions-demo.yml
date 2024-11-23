@@ -56,4 +56,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-history
-          destination_dir: allure-reports/${{ github.event.pull_request.number }}
