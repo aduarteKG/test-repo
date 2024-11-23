@@ -46,7 +46,7 @@ jobs:
         with:
           gh_pages: gh-pages
           subfolder: allure-reports/${{ github.event.pull_request.number }}
-          allure_history: gh-pages
+          allure_history: allure-history
           allure_results: allure-results
       
       - name: Publish test report
