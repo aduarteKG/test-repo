@@ -1,23 +1,43 @@
-name: Run tests
+name: Generate Allure Report
+
 on:
   pull_request:
-    types: [opened, synchronize]
+    branches: ['main']
+  workflow_dispatch:
+    inputs:
+      ALLURE_JOB_RUN_ID:
+        description: ALLURE_JOB_RUN_ID service parameter. Leave blank
+      ALLURE_USERNAME:
+        description: ALLURE_USERNAME service parameter. Leave blank
 
+env:
+  ALLURE_ENDPOINT: https://reportstest.testops.cloud/
+  ALLURE_PROJECT_ID: 1
+  ALLURE_TOKEN: ${{ secrets.ALLURE_TESTOPS_TOKEN }}
+  ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
+  ALLURE_RESULTS: ../../allure-results
+  ALLURE_LAUNCH_TAGS: ${{ github.repository }}, branch-${{ github.head_ref }}, pr-${{ github.event.number }}
+  
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Set up JDK
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Java
         uses: actions/setup-java@v4
         with:
-          distribution: zulu
-          java-version: 17
-
+            distribution: zulu
+            java-version: '17'
+            
+      - name: Install allurectl
+        uses: allure-framework/setup-allurectl@v1
+          
       - name: Run Java tests
         working-directory: ./api/junit5-migration-maven
-        run: ./mvnw verify
+        run: allurectl watch -- ./mvnw verify
       
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -30,29 +50,22 @@ jobs:
 
       - name: Run Jest tests
         working-directory: ./ui/react-testing-library
-        run: npm test
-
-      - name: Load test report history
-        uses: actions/checkout@v4
-        if: always()
+        run: |
+          allurectl watch -- npm test
+          ALLURE_JOB_RUN_URL=$(allurectl job-run env | grep 'ALLURE_JOB_RUN_URL=' | cut -d '=' -f 2 | tr -d '\r\n')
+          echo "Extracted URL: ${ALLURE_JOB_RUN_URL}"
+          if [[ -z "$ALLURE_JOB_RUN_URL" ]]; then
+            echo "Error: No valid URL extracted!" >&2
+            exit 1
+          fi
+          echo "ALLURE_JOB_RUN_URL=${ALLURE_JOB_RUN_URL}" >> $GITHUB_ENV
+         
+      - name: Comment PR with Allure Report link
+        if: ${{ always() && github.event_name == 'pull_request' }}
         continue-on-error: true
+        uses: thollander/actions-comment-pull-request@v2
         with:
-          ref: gh-pages
-          path: gh-pages/allure-reports/${{ github.event.pull_request.number }}
-
-      - name: Build test report
-        uses: simple-elf/allure-report-action@v1.10
-        if: always()
-        with:
-          gh_pages: gh-pages/allure-reports/${{ github.event.pull_request.number }}
-          allure_history: allure-history
-          allure_results: allure-results
-      
-      - name: Publish test report
-        uses: peaceiris/actions-gh-pages@v4
-        if: always()
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: allure-history
-          destination_dir: allure-reports/${{ github.event.pull_request.number }}
+          message: |
+            🎉 Allure Report is ready: [View Report](${{ env.ALLURE_JOB_RUN_URL }})
+          comment_tag: allure_report
+          mode: recreate
