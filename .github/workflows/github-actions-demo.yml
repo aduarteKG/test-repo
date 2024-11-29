@@ -53,11 +53,14 @@ jobs:
         working-directory: ./ui/react-testing-library
         run: |
           allurectl watch -- npm test
-          
-      - name: Debug Allure Job Run
-        run: allurectl job-run env
-
-          
+          ALLURE_JOB_RUN_URL=$(allurectl job-run env | grep 'ALLURE_JOB_RUN_URL=' | cut -d '=' -f 2 | tr -d '\r\n')
+          echo "Extracted URL: ${ALLURE_JOB_RUN_URL}"
+          if [[ -z "$ALLURE_JOB_RUN_URL" ]]; then
+            echo "Error: No valid URL extracted!" >&2
+            exit 1
+          fi
+          echo "ALLURE_JOB_RUN_URL=${ALLURE_JOB_RUN_URL}" >> $GITHUB_ENV
+         
       - name: Comment PR with Allure Report link
         if: ${{ always() && github.event_name == 'pull_request' }}
         continue-on-error: true
