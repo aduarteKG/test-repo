@@ -51,7 +51,7 @@ jobs:
       - name: Run Jest tests
         working-directory: ./ui/react-testing-library
         run: allurectl watch -- npm test |
-          echo "ALLURE_JOB_RUN_URL=$(allurectl job-run env | grep ALLURE_JOB_RUN_URL)" >> $GITHUB_ENV
+          echo "ALLURE_JOB_RUN_URL=$(allurectl job-run env | grep ALLURE_JOB_RUN_URL)" >> $GITHUB_OUTPUT
           
       - name: Comment PR with Allure Report link
         if: ${{ always() && github.event_name == 'pull_request' }}
@@ -59,6 +59,6 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            🎉 Allure Report is ready: [View Report]($ALLURE_JOB_RUN_URL)
+            🎉 Allure Report is ready: [View Report](${{ steps.version.outputs.ALLURE_JOB_RUN_URL }})
           comment_tag: allure_report
           mode: recreate
