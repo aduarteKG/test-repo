@@ -17,6 +17,7 @@ env:
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
   ALLURE_RESULTS: ../../allure-results
   ALLURE_LAUNCH_TAGS: ${{ github.repository }}, branch-${{ github.head_ref }}, pr-${{ github.event.number }}
+  ACTIONS_STEP_DEBUG: true
   
 jobs:
   build:
@@ -52,8 +53,10 @@ jobs:
         working-directory: ./ui/react-testing-library
         run: |
           allurectl watch -- npm test
-          ALLURE_JOB_RUN_URL=$(allurectl job-run env | grep -o 'https://.*')
-          echo "ALLURE_JOB_RUN_URL=${ALLURE_JOB_RUN_URL}" >> $GITHUB_ENV
+          
+      - name: Debug Allure Job Run
+        run: allurectl job-run env
+
           
       - name: Comment PR with Allure Report link
         if: ${{ always() && github.event_name == 'pull_request' }}
